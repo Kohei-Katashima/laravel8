@@ -61,3 +61,29 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## インストールしたもの
+- Laravel8
+
+```
+$ composer create-project --prefer-dist "laravel/laravel=8.*" .
+```
+
+-jetstream
+
+```
+$ composer require laravel/jetstream
+$ php artisan jetstream:install livewire
+$ php artisan migrate
+```
+-jetstream 日本語化
+
+```
+$ php -r "copy('https://readouble.com/laravel/8.x/ja/install-ja-lang-files.php', 'install-ja-lang.php');"
+$ php -f install-ja-lang.php
+$ php -r "unlink('install-ja-lang.php');"
+```
+
+- ja.jsonファイルを配置
+  - [KSuzuki2016/laravel-jetstream-lang-ja](https://github.com/KSuzuki2016/laravel-jetstream-lang-ja/tree/master/resources/lang)
+    - resources/lang/ja.json
